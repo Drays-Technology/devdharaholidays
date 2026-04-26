@@ -1,0 +1,14 @@
+<svg width="460" height="96" viewBox="0 0 460 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+  <polygon points="36,72 60,20 84,72" fill="none" stroke="#2d5a27" stroke-width="3" stroke-linejoin="round"></polygon>
+  <polygon points="60,40 80,72 40,72" fill="#2d5a27"></polygon>
+  <path d="M52 36 L60 20 L68 36 Z" fill="rgba(255,255,255,0.85)"></path>
+  
+  <polygon points="72,72 92,32 112,72" fill="none" stroke="#c9872a" stroke-width="3" stroke-linejoin="round"></polygon>
+  <polygon points="92,48 108,72 76,72" fill="#c9872a" opacity="0.9"></polygon>
+  
+  <line x1="136" y1="22" x2="136" y2="74" stroke="#e0dbd2" stroke-width="1.5"></line>
+  
+  <text x="154" y="62" font-family="&#39;Playfair Display&#39;, Georgia, serif" font-size="46" font-weight="500" fill="#1a2318" letter-spacing="1">Devdhara</text>
+  <text x="156" y="82" font-family="&#39;DM Sans&#39;, sans-serif" font-size="14" font-weight="400" fill="#c9872a" letter-spacing="9">HOLIDAYS</text>
+</svg>
