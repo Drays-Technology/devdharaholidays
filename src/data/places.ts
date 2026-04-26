@@ -17,7 +17,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'hampta-pass': {
     name: 'Hampta Pass',
     tagline: 'From green valleys to barren moonscapes — Himachal\'s most dramatic crossing',
-    image: '/images/places/hampta-pass.jpg',
+    image: '/images/places/detail/hampta-pass.jpg',
     type: 'trek',
     difficulty: 'Moderate',
     elevation: '4,270 m',
@@ -43,7 +43,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'saryolsar-lake': {
     name: 'Saryolsar Lake',
     tagline: 'A sacred high-altitude lake hidden in ancient cedar forests',
-    image: '/images/places/saryolsar-lake.jpg',
+    image: '/images/places/detail/saryolsar-lake.jpg',
     type: 'trek',
     difficulty: 'Easy–Moderate',
     elevation: '3,100 m',
@@ -67,7 +67,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'tirthan-valley': {
     name: 'Tirthan Valley',
     tagline: 'A hidden gem on the edge of the Great Himalayan National Park',
-    image: '/images/places/tirthan-valley.jpg',
+    image: '/images/places/detail/tirthan-valley.jpg',
     type: 'trek',
     difficulty: 'Easy',
     elevation: '2,650 m',
@@ -92,7 +92,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'prashar-lake': {
     name: 'Prashar Lake',
     tagline: 'A floating island temple with sweeping Dhauladhar views',
-    image: '/images/places/prashar-lake.jpg',
+    image: '/images/places/detail/prashar-lake.jpg',
     type: 'trek',
     difficulty: 'Easy',
     elevation: '2,730 m',
@@ -115,7 +115,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'chander-khani': {
     name: 'Chandrakhani Pass',
     tagline: 'Apple orchards to high ridges — sweeping views of the Kullu valley',
-    image: '/images/places/chander-khani-pass.jpg',
+    image: '/images/places/detail/chander-khani-pass.jpg',
     type: 'trek',
     difficulty: 'Moderate',
     elevation: '3,660 m',
@@ -140,7 +140,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'kareri-lake': {
     name: 'Kareri Lake',
     tagline: 'A magnificent glacial lake set against the Dhauladhar range',
-    image: '/images/places/kareri-lake.jpg',
+    image: '/images/places/detail/kareri-lake.jpg',
     type: 'trek',
     difficulty: 'Moderate',
     elevation: '2,934 m',
@@ -164,7 +164,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'triund': {
     name: 'Triund',
     tagline: 'Dharamshala\'s crown jewel — meadow campsite with the Dhauladhar snow wall',
-    image: '/images/places/triund.jpg',
+    image: '/images/places/detail/triund.jpg',
     type: 'trek',
     difficulty: 'Easy',
     elevation: '2,828 m',
@@ -187,7 +187,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'dev-roopa': {
     name: 'Dev Roopa · Ghepan Roppa',
     tagline: 'Remote, raw and stunningly beautiful — for the true adventurer',
-    image: '/images/places/dev-roopa-ghepan-roppa.jpg',
+    image: '/images/places/detail/dev-roopa-ghepan-roppa.jpg',
     type: 'trek',
     difficulty: 'Challenging',
     elevation: '4,000+ m',
@@ -215,7 +215,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'spiti-circuit': {
     name: 'Lahaul Spiti Complete Circuit',
     tagline: 'A bucket-list road journey through the high-altitude cold desert',
-    image: '/images/places/lahaul-spiti.jpg',
+    image: '/images/places/detail/lahaul-spiti.jpg',
     type: 'destination',
     bestTime: 'June – October',
     overview: 'The Lahaul-Spiti circuit is one of India\'s best-known high-altitude road journeys, winding through the cold desert of Spiti valley with ancient Buddhist monasteries, Chandratal Lake, Hikkim\'s high-altitude post office, and dramatic mountain roads through Lahaul and Spiti.',
@@ -245,7 +245,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'jaipur': {
     name: 'Jaipur',
     tagline: 'The Pink City — Amber Fort, Hawa Mahal & royal heritage',
-    image: '/images/places/jaipur.jpg',
+    image: '/images/places/detail/jaipur.jpg',
     type: 'destination',
     bestTime: 'October – March',
     overview: 'Jaipur, the capital of Rajasthan, is a magnificent city where royal palaces, massive forts, and bustling bazaars coexist. Founded in 1727 by Maharaja Sawai Jai Singh II, the city was India\'s first planned city and is known for its distinctive terracotta-pink architecture. From the grandeur of Amber Fort to the intricate lattice windows of Hawa Mahal, every corner tells a story of Rajput valour and artistic genius.',
@@ -267,7 +267,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'udaipur': {
     name: 'Udaipur',
     tagline: 'City of Lakes & Palaces — the most romantic city in India',
-    image: '/images/places/udaipur.jpg',
+    image: '/images/places/detail/udaipur.jpg',
     type: 'destination',
     bestTime: 'September – March',
     overview: 'Often called the "Venice of the East", Udaipur is built around a series of stunning artificial lakes and adorned with grand palaces, temples, and havelis. The City Palace complex rising above Lake Pichola is one of Rajasthan\'s most magnificent sights. Whether it\'s a sunset boat ride, exploring the intricate palace rooms, or simply watching the light change over the Aravalli hills, Udaipur casts a spell that lingers.',
@@ -289,7 +289,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'jodhpur': {
     name: 'Jodhpur',
     tagline: 'The Blue City — Mehrangarh Fort & Rajput grandeur',
-    image: '/images/places/jodhpur.jpg',
+    image: '/images/places/detail/jodhpur.jpg',
     type: 'destination',
     bestTime: 'October – March',
     overview: 'Jodhpur, the "Blue City," sits at the edge of the Thar Desert with the imposing Mehrangarh Fort towering above a sea of blue-washed houses. The fort — one of the largest in India — is a masterpiece of Rajput architecture with ornate palace rooms, sprawling courtyards, and jaw-dropping views of the blue city below.',
@@ -309,7 +309,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'pushkar': {
     name: 'Pushkar',
     tagline: 'Sacred lake and Brahma Temple — one of Rajasthan\'s key pilgrimage towns',
-    image: '/images/places/pushkar.jpg',
+    image: '/images/places/detail/pushkar.jpg',
     type: 'pilgrimage',
     bestTime: 'October – March (Pushkar Fair: Nov)',
     overview: 'Pushkar is one of Rajasthan\'s most important pilgrimage towns, centred around a holy lake with 52 bathing ghats and its famous Brahma Temple. The town has an irresistible charm — narrow lanes filled with incense smoke, sunset aarti ceremonies at the ghats, and the vibrant annual Pushkar Fair.',
@@ -329,7 +329,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'nainital': {
     name: 'Nainital',
     tagline: 'The Lake District of India — a Kumaon hill station gem',
-    image: '/images/places/nainital.jpg',
+    image: '/images/places/detail/nainital.jpg',
     type: 'destination',
     bestTime: 'March – June, September – November',
     overview: 'Nestled in the Kumaon foothills at 1,938 m, Nainital is wrapped around the beautiful emerald-green Naini Lake with seven hills surrounding it like a natural amphitheatre. The British-era charm lingers in its colonial architecture, winding Mall Road, and the Governor\'s House.',
@@ -351,7 +351,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'mussoorie': {
     name: 'Mussoorie',
     tagline: 'Queen of the Hills — colonial charm meets Himalayan beauty',
-    image: '/images/places/mussoorie.jpg',
+    image: '/images/places/detail/mussoorie.jpg',
     type: 'destination',
     bestTime: 'March – June, September – November',
     overview: 'Perched on the Garhwal Himalayan foothills at 2,005 m, Mussoorie has been a beloved hill station since the British era. The "Queen of the Hills" offers the perfect mix of colonial heritage, mountain views, and pleasant weather.',
@@ -372,7 +372,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'char-dham': {
     name: 'Char Dham Yatra',
     tagline: 'Badrinath · Kedarnath · Gangotri · Yamunotri — the sacred circuit',
-    image: '/images/places/char-dham.jpg',
+    image: '/images/places/detail/char-dham.jpg',
     type: 'pilgrimage',
     bestTime: 'May – June, September – October',
     overview: 'The Char Dham Yatra is one of Hinduism\'s best-known pilgrimage circuits, visiting four sacred shrines in the Garhwal Himalayas: Badrinath, Kedarnath, Gangotri, and Yamunotri. Gangotri and Yamunotri are revered as the origin shrines of the Ganga and Yamuna, while the physical glacier sources lie further uphill.',
@@ -402,7 +402,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'rishikesh': {
     name: 'Rishikesh',
     tagline: 'Yoga capital of the world — adventure meets spirituality',
-    image: '/images/places/rishikesh.jpg',
+    image: '/images/places/detail/rishikesh.jpg',
     type: 'destination',
     bestTime: 'September – May',
     overview: 'Rishikesh sits in the Himalayan foothills along the Ganga, creating a blend of spiritual tourism and adventure travel. Often promoted as the yoga capital of the world, it is also one of India\'s best-known white-water rafting bases.',
@@ -424,7 +424,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'mathura-vrindavan': {
     name: 'Mathura · Vrindavan',
     tagline: 'Birthplace of Lord Krishna — a divine circuit of temples and faith',
-    image: '/images/places/mathura-vrindavan.jpg',
+    image: '/images/places/detail/mathura-vrindavan.jpg',
     type: 'pilgrimage',
     bestTime: 'October – March (Holi: Feb/Mar)',
     overview: 'Mathura and Vrindavan together form one of India\'s most important Krishna pilgrimage circuits. Mathura\'s Krishna Janmabhoomi complex is traditionally revered as the birthplace of Lord Krishna, while Vrindavan\'s temples celebrate Krishna devotion across the region.',
@@ -444,7 +444,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'ayodhya': {
     name: 'Ayodhya',
     tagline: 'Ram Janmabhoomi — sacred, eternal, and reborn',
-    image: '/images/places/ayodhya.png',
+    image: '/images/places/detail/ayodhya.png',
     type: 'pilgrimage',
     bestTime: 'October – March',
     overview: 'Ayodhya is one of the seven sacred cities in Hindu tradition and is revered as the birthplace of Lord Rama. The Ram Mandir at Ram Janmabhoomi is now the city\'s central pilgrimage landmark. Beyond the temple, Ayodhya offers a deeply spiritual experience with the Saryu river ghats and a large network of historic temples.',
@@ -464,7 +464,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'khatu-shyam': {
     name: 'Khatu Shyam',
     tagline: 'Sikar, Rajasthan — one of North India\'s best-known Shyam Baba shrines',
-    image: '/images/places/khatu-shyam.jpg',
+    image: '/images/places/detail/khatu-shyam.jpg',
     type: 'pilgrimage',
     bestTime: 'Year-round (Phalguna Mela: Feb/Mar)',
     overview: 'Khatu Shyam Ji temple in Sikar district is one of the most visited pilgrimage sites in Rajasthan. The shrine is dedicated to Shyam Baba, identified in tradition with Barbarika from the Mahabharata. The temple draws large numbers of devotees, especially during the annual Phalguna fair.',
@@ -484,7 +484,7 @@ export const PLACES: Record<string, PlaceInfo> = {
   'salasar-balaji': {
     name: 'Salasar Balaji',
     tagline: 'Churu, Rajasthan — one of Rajasthan\'s major Hanuman shrines',
-    image: '/images/places/salasar-balaji.jpg',
+    image: '/images/places/detail/salasar-balaji.jpg',
     type: 'pilgrimage',
     bestTime: 'Year-round (Chaitra & Ashwin Purnima)',
     overview: 'Salasar Balaji temple in Churu district is a major Hanuman shrine in Rajasthan. Tradition reveres the idol here as swayambhu (self-manifested), and the temple is especially well known for the deity\'s bearded appearance. Devotees visit year-round, with heavier rush on Tuesdays, Saturdays, and during Chaitra and Ashwin Purnima.',

@@ -38,12 +38,7 @@ export function PlacePage() {
   return (
     <>
       <div className="detail-hero">
-        <button className="detail-back" aria-label="Go back" onClick={() => navigate(-1)}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M19 12H5" /><path d="M12 19l-7-7 7-7" />
-          </svg>
-        </button>
-        <img src={place.image} alt={place.name} />
+        <img src={place.image} alt={place.name} fetchPriority="high" decoding="async" />
         <div className="detail-hero-overlay">
           <div className="detail-hero-badges">
             <span className="detail-badge detail-badge-type">{typeLabel}</span>
