@@ -167,7 +167,7 @@ export function ContactForm() {
   return (
     <div className="form-section" id="contact">
       <div className="form-visual">
-        <img src="https://images.unsplash.com/photo-1543877087-ebf71fde2be1?w=900&q=80" alt="Mountain camping" loading="lazy" />
+        <img src="/images/places/detail/triund.jpg" alt="Mountain camping" loading="lazy" />
         <div className="form-visual-overlay">
           <h2 className="detail-section-title">Your next<br />story awaits.</h2>
           <p>Tell us your dream destination and we'll craft the perfect package — treks, pilgrimages, road trips and more.</p>

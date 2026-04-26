@@ -2,7 +2,7 @@ export function WhyUs() {
   return (
     <div className="why-section">
       <div className="why-img reveal-left">
-        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=900&q=80" alt="Mountain journey" loading="lazy" onLoad={(e) => (e.target as HTMLImageElement).classList.add('loaded')} />
+        <img src="/images/places/detail/hampta-pass.jpg" alt="Mountain journey" loading="lazy" onLoad={(e) => (e.target as HTMLImageElement).classList.add('loaded')} />
       </div>
       <div className="why-content reveal-right">
         <p className="section-eyebrow" style={{ color: 'var(--gold-light)' }}>Why Devdhara</p>
