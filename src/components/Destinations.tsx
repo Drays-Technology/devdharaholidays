@@ -46,7 +46,7 @@ export function Destinations() {
   const [activeTab, setActiveTab] = useState('rajasthan')
 
   return (
-    <section className="destinations-section" id="destinations">
+    <section className="destinations-section deferred-section" id="destinations">
       <div className="section-header reveal">
         <p className="section-eyebrow" style={{ color: 'var(--gold-light)' }}>Beyond the Hills</p>
         <h2 className="section-title light">Holiday Destinations Across India</h2>

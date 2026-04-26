@@ -1,6 +1,6 @@
 export function Testimonials() {
   return (
-    <section className="testimonials-section">
+    <section className="testimonials-section deferred-section">
       <div className="section-header reveal" style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 60px' }}>
         <p className="section-eyebrow">Traveller Stories</p>
         <h2 className="section-title" style={{ maxWidth: '100%' }}>What our guests say</h2>

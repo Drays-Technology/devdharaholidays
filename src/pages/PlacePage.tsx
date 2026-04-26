@@ -1,7 +1,8 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import { PLACES } from '../data/places'
-import { WHATSAPP_NUMBER, BUSINESS_NAME } from '../data/env'
+import { WHATSAPP_NUMBER, BUSINESS_NAME, SITE_URL } from '../data/env'
+import { useSeo } from '../hooks/useSeo'
 
 export function PlacePage() {
   const { placeId } = useParams<{ placeId: string }>()
@@ -21,12 +22,64 @@ export function PlacePage() {
   }
 
   const typeLabel = place.type === 'trek' ? 'Trek' : place.type === 'pilgrimage' ? 'Pilgrimage' : 'Destination'
+  const typeLabelPlural = place.type === 'trek' ? 'trek packages' : place.type === 'pilgrimage' ? 'pilgrimage tours' : 'holiday packages'
   const difficultyBadge = place.difficulty
     ? <span className={`detail-badge diff-${place.difficulty.toLowerCase().replace(/[–\s]/g, '-')}`}>{place.difficulty}</span>
     : null
   const elevationBadge = place.elevation
     ? <span className="detail-badge detail-badge-outline">▲ {place.elevation}</span>
     : null
+  const pageDescription = `${place.name} with ${BUSINESS_NAME}: ${place.overview}`.slice(0, 280)
+  const canonicalPath = `/place/${placeId}`
+  const absoluteUrl = `${(SITE_URL || '').replace(/\/+$/, '')}${canonicalPath}`
+  const placeSchemaType = place.type === 'destination' ? 'TouristDestination' : 'TouristAttraction'
+
+  useSeo({
+    title: `${place.name} ${typeLabel} | ${BUSINESS_NAME}`,
+    description: pageDescription,
+    path: canonicalPath,
+    image: place.image,
+    structuredData: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'WebPage',
+          name: `${place.name} | ${BUSINESS_NAME}`,
+          description: pageDescription,
+          url: absoluteUrl,
+          primaryImageOfPage: place.image,
+          about: {
+            '@id': `${absoluteUrl}#place`,
+          },
+        },
+        {
+          '@id': `${absoluteUrl}#place`,
+          '@type': placeSchemaType,
+          name: place.name,
+          description: place.overview,
+          image: place.image,
+          touristType: typeLabelPlural,
+        },
+        {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Home',
+              item: SITE_URL || '/',
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: place.name,
+              item: absoluteUrl,
+            },
+          ],
+        },
+      ],
+    },
+  })
 
   function handleEnquire(e: React.MouseEvent) {
     e.preventDefault()

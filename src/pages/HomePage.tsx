@@ -9,10 +9,18 @@ import { Fleet } from '../components/Fleet'
 import { WhyUs } from '../components/WhyUs'
 import { Testimonials } from '../components/Testimonials'
 import { ContactForm } from '../components/ContactForm'
+import { useSeo } from '../hooks/useSeo'
+import { BUSINESS_NAME } from '../data/env'
 
 export function HomePage() {
   const location = useLocation()
   useScrollReveal([location.pathname])
+  useSeo({
+    title: `${BUSINESS_NAME} — Where Every Path Leads to a Story`,
+    description: `${BUSINESS_NAME} offers curated trek packages, holiday tours and pilgrimage trips across Himachal Pradesh, Rajasthan and Uttarakhand with local guides and reliable transport.`,
+    path: '/',
+    image: '/images/places/detail/lahaul-spiti.jpg',
+  })
 
   // Handle scroll-to from navigation state
   useEffect(() => {

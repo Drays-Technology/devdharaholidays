@@ -1,6 +1,6 @@
 export function Fleet() {
   return (
-    <section className="fleet-section" id="fleet">
+    <section className="fleet-section deferred-section" id="fleet">
       <div className="section-header reveal" style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 60px' }}>
         <p className="section-eyebrow">Our Fleet</p>
         <h2 className="section-title" style={{ maxWidth: '100%' }}>Complete Fleet of Cabs &amp; Travellers</h2>

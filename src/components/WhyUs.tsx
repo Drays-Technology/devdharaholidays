@@ -1,6 +1,6 @@
 export function WhyUs() {
   return (
-    <div className="why-section">
+    <div className="why-section deferred-section">
       <div className="why-img reveal-left">
         <img src="/images/places/detail/hampta-pass.jpg" alt="Mountain journey" loading="lazy" onLoad={(e) => (e.target as HTMLImageElement).classList.add('loaded')} />
       </div>

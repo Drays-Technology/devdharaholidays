@@ -165,9 +165,14 @@ export function ContactForm() {
   }
 
   return (
-    <div className="form-section" id="contact">
+    <div className="form-section deferred-section" id="contact">
       <div className="form-visual">
-        <img src="/images/places/detail/triund.jpg" alt="Mountain camping" loading="lazy" />
+        <img
+          src="/images/places/detail/triund.jpg"
+          alt="Mountain camping"
+          loading="lazy"
+          onLoad={(e) => (e.target as HTMLImageElement).classList.add('loaded')}
+        />
         <div className="form-visual-overlay">
           <h2 className="detail-section-title">Your next<br />story awaits.</h2>
           <p>Tell us your dream destination and we'll craft the perfect package — treks, pilgrimages, road trips and more.</p>

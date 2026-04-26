@@ -45,7 +45,7 @@ function TrekCard({ card, index }: { card: TrekCardData; index: number }) {
 
 export function Treks() {
   return (
-    <section className="treks-section" id="treks">
+    <section className="treks-section deferred-section" id="treks">
       <div className="section-header reveal">
         <p className="section-eyebrow">Himachal Pradesh</p>
         <h2 className="section-title">Legendary Treks in the Heart of the Himalayas</h2>
